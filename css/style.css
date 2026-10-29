@@ -1,0 +1,19 @@
+html, body { margin: 0; height: 100%; overflow: hidden; background: #1a120c; font-family: Georgia, serif; }
+#app canvas { display: block; }
+#vr {
+  position: fixed; right: 18px; bottom: 18px;
+  padding: 12px 24px; font-size: 17px; font-weight: 700; font-family: system-ui, sans-serif;
+  color: #2b1a0e; background: #d9a441; border: 0; border-radius: 12px; cursor: pointer;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.45);
+}
+#vr:disabled { background: #5b4430; color: #efe0c8; cursor: default; }
+#hint {
+  position: fixed; left: 16px; bottom: 18px; right: 330px; color: #f3e6cf; font: 14px/1.5 system-ui, sans-serif;
+  pointer-events: none;
+}
+#hint span { display: inline-block; background: rgba(34,22,12,0.78); padding: 6px 10px; border-radius: 8px; }
+#hint:empty { display: none; }
+#fps {
+  display: none; position: fixed; right: 16px; top: 14px; color: #ffd76e; font: bold 15px monospace;
+  background: rgba(0,0,0,0.6); padding: 4px 8px; border-radius: 6px; pointer-events: none;
+}
